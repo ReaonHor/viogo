@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# VIOGO
+首页
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://github.com/ReaonHor/viogo/assets/116567159/01bd1eed-2841-4f52-b9c3-618872526139)
 
-## Available Scripts
+个人中心
+![image](https://github.com/ReaonHor/viogo/assets/116567159/97b56b14-b40a-4405-b05e-7360a57888c7)
+播放页面
+![image](https://github.com/ReaonHor/viogo/assets/116567159/3f78aa84-d1ef-4d10-9006-d8e334eba8f6)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 实现功能
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. 用户登录、注册、弹幕，评论，个人收藏，点赞内容体系
+2. 视频播放
+3. 直播栏
+4. 一对一私信实时聊天
 
-### `npm test`
+## 前端
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**技术栈**
 
-### `npm run build`
+react18、redux/react-redux、react-router-dom v6  axios  CSS-IN-JS(style-components)、sass、AntDesign
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**页面层级目录**
 
-### `npm run eject`
+* 登录
+* app
+  * 首页
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    * 推荐
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    * 热门
+    * 直播
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  * 动态
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    * 综合
+    * 写动态
 
-## Learn More
+  * 我的
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    * 历史记录
+    * 我的收藏
+    * 点赞
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  * 个人中心
 
-### Code Splitting
+    * 动态
+    * 投稿
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  * 消息
+    * 聊天列表
+    * 回复我的
+    * 收到的赞
 
-### Analyzing the Bundle Size
+## 后端
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**技术栈**
 
-### Making a Progressive Web App
+nestjs、mysql
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* react-intersection-observer  github上的一个
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* redux
+* 视屏封面组件的优化
+* 历史记录的封装，localstorage优化，LRU算法
+* socket.io的
+* axios转发cookie
+* 登录鉴权
